@@ -1,0 +1,17 @@
+.btn {
+    /* crear boton de un hipervinculo <a> */
+    background-color: $mainBlue;
+    color: #fff;
+    text-decoration: none;
+    padding: .75rem;
+    display: inline-block;
+
+    &--orange {
+        background-color: $mainOrange;
+    }
+
+    &--large {
+        font-size: 1.25rem;
+        padding: 1.1rem 1.9rem;        
+    }
+}
