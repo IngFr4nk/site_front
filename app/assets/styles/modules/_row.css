@@ -47,7 +47,27 @@
         padding-right: 100px;
     }
 
+    &--gutter-small {
+        margin-right: 45px;
+    }
+
     &__b-margin-until-medium {
         margin-bottom: 0;
+    }
+
+    &--t-padding {
+        padding-top: 60px;
+    } 
+    
+    /* equal medium style */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;            
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
     }
 }

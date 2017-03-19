@@ -10,5 +10,21 @@
     &--blue {
         background-color: $mainBlue;
         color: #fff;
-    }    
+    }
+
+    &--no-b-padding{
+        padding-bottom: 0;
+        @mixin atMedium {
+            padding-bottom: 4.5rem;
+        }
+    }
+
+    &--testimonials {
+        background-color: #e0e6ef;
+        @mixin atMedium {
+            /*cargar imagen de fondo y hacer que ocupe todo el div */
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover;
+        }                
+    }   
 }
